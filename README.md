@@ -13,7 +13,6 @@ a repo for cataloging ideas around integrating spatial mass spec with vitessce
 - Support spatial selection (through segmentation or manual area selection) and aggregate underlying spectra (e.g. mean spectrum).
 
 - Support a m/z spectrum view. Selection from IMS 2D spatial layer allows user to view entire m/z spectrum for point selection (or aggregate spectrum of multiple points).
- - NOTE: The visual encoding for this spectrum view may be dynamic. Depends on the sparsity of spectrum supplied to the front-end.
  
 - For annotated m/z ratios, provide visual indication of confidence of annotation.
 
@@ -23,6 +22,7 @@ a repo for cataloging ideas around integrating spatial mass spec with vitessce
 - Selecting layers (via brush or annotation)
   - If annotated m/z (spase spectrum), fetch 2d slice at single m/z and render.
   - If raw data (dense spectrum), sample a few m/z in range initially and then load rest?
+  - `NOTE`: The visual encoding for this selection should likely be dynamic (ie. spectrum for dense/raw data and table/heatmap/etc for annotated layers).
 
 - Pan-and-zoom of rendered layers
   - Hopefully handled by deck.gl.
