@@ -2,7 +2,7 @@
 a repo for cataloging ideas around integrating spatial mass spec with vitessce
 
 ## viewer objectives
-
+### high priority
 - Support 2D spatial layers.
   - MxIF imaging channel (high resolution; OME-TIFF format)
   - IMS channel (annotated m/z ratio; currently in imzML format or .csv)
@@ -10,13 +10,15 @@ a repo for cataloging ideas around integrating spatial mass spec with vitessce
   
 - Support multiple layers and blending of 2D layers.
 
+- Support a m/z spectrum view. Selection from IMS 2D spatial layer allows user to view entire m/z spectrum for point selection (or aggregate spectrum of multiple points).
+
+### medium priority
 - Support spatial selection (through segmentation or manual area selection) and aggregate underlying spectra (e.g. mean spectrum).
 
-- Support a m/z spectrum view. Selection from IMS 2D spatial layer allows user to view entire m/z spectrum for point selection (or aggregate spectrum of multiple points).
- 
+### lower priority
 - For annotated m/z ratios, provide visual indication of confidence of annotation.
 
-- Provide optional (toggle) view of QC summary for current IMS (data pending) 
+- Provide optional (toggle) view of QC summary for current IMS (data pending).
 
 ## priority interactions
 - Selecting layers (via brush or annotation)
@@ -31,6 +33,8 @@ a repo for cataloging ideas around integrating spatial mass spec with vitessce
   - Look at current implementation linking 2D-Scatterplots in vitessce. 
 
 ## slower interactions
-- Aggregate specific annotated m/z channels (ie. biologically meaningful grouping; m/z may be far apart)
+- Aggregate 2d spatial annotated m/z channels (ie. biologically meaningful grouping; m/z may be far apart)
   - likely some type of dropdown to select multiple annotated m/z.
+  
+- Create aggregate spectrum from 2d selection.
 
