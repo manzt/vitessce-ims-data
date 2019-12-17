@@ -31,6 +31,8 @@ a repo for cataloging ideas around integrating spatial mass spec with vitessce
 
 - Coordination between separate views
   - Look at current implementation linking 2D-Scatterplots in vitessce. 
+  - Coordinated pan & zoom between views
+  - Look at how higlass defines these linked views (ie. shared zooming but not panning)
 
 ## slower interactions
 - Aggregate 2d spatial annotated m/z channels (ie. biologically meaningful grouping; m/z may be far apart)
